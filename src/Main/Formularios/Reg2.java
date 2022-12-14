@@ -4,11 +4,12 @@
  */
 package Main.Formularios;
 
+import Main.DAO.IRevisionesImpl;
 import java.awt.BorderLayout;
 import javax.swing.JOptionPane;
-import Main.DAO.ITecnicoImpl;
-import Main.Modelos.Tecnico;
-import static Main.Formularios.Dashboard.content;
+
+import static Main.Formularios.Dashboard2.content;
+import Main.Modelos.Revisiones;
 
 
 /**
@@ -1431,12 +1432,12 @@ public class Reg2 extends javax.swing.JPanel {
     }//GEN-LAST:event_t4MousePressed
 
     private void jPanel1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MousePressed
-        Tecnico tc = new Tecnico(t1.getText(),t2.getText(),t3.getText(),t4.getText(), t5.getText(), t6.getText(), t7.getText(), t8.getText(), t9.getText(), t10.getText(), t11.getText(),t12.getText(), t13.getText(), t14.getText(), t15.getText(), t16.getText(), t17.getText(), t18.getText(), t19.getText(), t20.getText(), t21.getText(), t22.getText(), t23.getText(), t24.getText(), t25.getText(), t26.getText(), t27.getText(), t28.getText(), t29.getText(), t30.getText(), t31.getText(), t32.getText(), t33.getText(), t34.getText(), t35.getText(), t36.getText(), t37.getText(), t38.getText(), t39.getText(), t40.getText(), t41.getText(), t42.getText(), t43.getText());
-        ITecnicoImpl itc = new ITecnicoImpl();
-        itc.agregarTecnico(tc);
+        Revisiones rv = new Revisiones(t1.getText(),t2.getText(),t3.getText(),t4.getText(), t5.getText(), t6.getText(), t7.getText(), t8.getText(), t9.getText(), t10.getText(), t11.getText(),t12.getText(), t13.getText(), t14.getText(), t15.getText(), t16.getText(), t17.getText(), t18.getText(), t19.getText(), t20.getText(), t21.getText(), t22.getText(), t23.getText(), t24.getText(), t25.getText(), t26.getText(), t27.getText(), t28.getText(), t29.getText(), t30.getText(), t31.getText(), t32.getText(), t33.getText(), t34.getText(), t35.getText(), t36.getText(), t37.getText(), t38.getText(), t39.getText(), t40.getText(), t41.getText(), t42.getText(), t43.getText());
+        IRevisionesImpl irv = new IRevisionesImpl();
+        irv.agregarRevisiones(rv);
         JOptionPane.showMessageDialog(this, "Acción Completada");
 
-        Menu2 p1 = new Menu2();
+        Menu2B p1 = new Menu2B();
         p1.setSize(790, 570);
         p1.setLocation(0,0);
 

@@ -60,9 +60,9 @@ public class Dashboard2 extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         btn_order = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
-        btn_tecno = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
         btn_tecno1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        btn_tecno = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         Header = new javax.swing.JPanel();
         fecha = new javax.swing.JLabel();
@@ -160,27 +160,6 @@ public class Dashboard2 extends javax.swing.JFrame {
 
         Menu.add(btn_order, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 230, 70));
 
-        btn_tecno.setBackground(new java.awt.Color(51, 153, 255));
-        btn_tecno.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btn_tecnoMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                btn_tecnoMouseExited(evt);
-            }
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                btn_tecnoMousePressed(evt);
-            }
-        });
-        btn_tecno.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Main/Icon/folder/Icons/comprobacion-de-lista.png"))); // NOI18N
-        jLabel1.setText("EMPLEADOS");
-        btn_tecno.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, 100, -1));
-
-        Menu.add(btn_tecno, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 600, 230, 70));
-
         btn_tecno1.setBackground(new java.awt.Color(51, 153, 255));
         btn_tecno1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -195,12 +174,33 @@ public class Dashboard2 extends javax.swing.JFrame {
         });
         btn_tecno1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Main/Icon/folder/Icons/comprobacion-de-lista.png"))); // NOI18N
+        jLabel1.setText("EMPLEADOS");
+        btn_tecno1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, 130, -1));
+
+        Menu.add(btn_tecno1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 600, 230, 70));
+
+        btn_tecno.setBackground(new java.awt.Color(51, 153, 255));
+        btn_tecno.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btn_tecnoMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btn_tecnoMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btn_tecnoMousePressed(evt);
+            }
+        });
+        btn_tecno.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Main/Icon/folder/Icons/comprobacion-de-lista.png"))); // NOI18N
         jLabel4.setText("REVISIONES");
-        btn_tecno1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, 100, -1));
+        btn_tecno.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, 100, -1));
 
-        Menu.add(btn_tecno1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 380, 230, 70));
+        Menu.add(btn_tecno, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 380, 230, 70));
 
         Background.add(Menu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 230, 740));
 
@@ -252,7 +252,7 @@ public class Dashboard2 extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_princMouseEntered
 
     private void btn_princMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_princMouseExited
-        if(btn_empress.getBackground().getRGB() != -15574355 || btn_reguser.getBackground().getRGB() != -15574355 || btn_tecno.getBackground().getRGB() != -15574355)
+        if(btn_empress.getBackground().getRGB() != -15574355 || btn_reguser.getBackground().getRGB() != -15574355 || btn_tecno1.getBackground().getRGB() != -15574355)
             resetColor(btn_princ);
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_princMouseExited
@@ -261,7 +261,7 @@ public class Dashboard2 extends javax.swing.JFrame {
         setColor(btn_princ);
         resetColor(btn_empress);
         resetColor(btn_reguser);
-        resetColor(btn_tecno);
+        resetColor(btn_tecno1);
 
         Principal p1 = new Principal();
         p1.setSize(750, 430);
@@ -281,7 +281,7 @@ public class Dashboard2 extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_empressMouseEntered
 
     private void btn_empressMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_empressMouseExited
-            if(btn_princ.getBackground().getRGB() != -15574355 || btn_reguser.getBackground().getRGB() != -15574355 || btn_tecno.getBackground().getRGB() != -15574355)
+            if(btn_order.getBackground().getRGB() != -15574355 ||btn_tecno.getBackground().getRGB() != -15574355 ||btn_princ.getBackground().getRGB() != -15574355 || btn_reguser.getBackground().getRGB() != -15574355 || btn_tecno1.getBackground().getRGB() != -15574355)
             resetColor(btn_empress);
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_empressMouseExited
@@ -290,8 +290,10 @@ public class Dashboard2 extends javax.swing.JFrame {
         setColor(btn_empress);
         resetColor(btn_princ);
         resetColor(btn_reguser);
+        resetColor(btn_tecno1);
         resetColor(btn_tecno);
-
+        resetColor(btn_order);
+        
         Menu1B p1 = new Menu1B();
         p1.setSize(790, 570);
         p1.setLocation(0,0);
@@ -310,7 +312,7 @@ public class Dashboard2 extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_reguserMouseEntered
 
     private void btn_reguserMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_reguserMouseExited
-         if(btn_empress.getBackground().getRGB() != -15574355 || btn_princ.getBackground().getRGB() != -15574355 || btn_tecno.getBackground().getRGB() != -15574355)
+         if(btn_empress.getBackground().getRGB() != -15574355 || btn_princ.getBackground().getRGB() != -15574355 || btn_tecno1.getBackground().getRGB() != -15574355)
              resetColor(btn_reguser);
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_reguserMouseExited
@@ -319,29 +321,33 @@ public class Dashboard2 extends javax.swing.JFrame {
         setColor(btn_reguser);
         resetColor(btn_empress);
         resetColor(btn_princ);
-        resetColor(btn_tecno);
+        resetColor(btn_tecno1);
         
         JOptionPane.showMessageDialog(this, "Privilegios Insuficiente");
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_reguserMousePressed
 
-    private void btn_tecnoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tecnoMouseExited
-             if(btn_empress.getBackground().getRGB() != -15574355 || btn_princ.getBackground().getRGB() != -15574355 || btn_reguser.getBackground().getRGB() != -15574355)
-             resetColor(btn_tecno);
+    private void btn_tecno1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tecno1MouseExited
+        if(btn_order.getBackground().getRGB() != -15574355 ||btn_tecno1.getBackground().getRGB() != -15574355 ||btn_empress.getBackground().getRGB() != -15574355 || btn_princ.getBackground().getRGB() != -15574355 || btn_reguser.getBackground().getRGB() != -15574355)
+        resetColor(btn_tecno);
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_tecnoMouseExited
+    }//GEN-LAST:event_btn_tecno1MouseExited
 
-    private void btn_tecnoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tecnoMouseEntered
+    private void btn_tecno1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tecno1MouseEntered
             if(btn_tecno.getBackground().getRGB() == -15574355)
-            setColor(btn_tecno);
+            setColor(btn_tecno1);
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_tecnoMouseEntered
+    }//GEN-LAST:event_btn_tecno1MouseEntered
 
-    private void btn_tecnoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tecnoMousePressed
-        setColor(btn_tecno);
+    private void btn_tecno1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tecno1MousePressed
+        setColor(btn_tecno1);
         resetColor(btn_princ);
         resetColor(btn_empress);
         resetColor(btn_reguser);
+        resetColor(btn_tecno1);
+        resetColor(btn_order);
+
+
         
         Menu4B p1 = new Menu4B();
         p1.setSize(790, 570);
@@ -352,13 +358,15 @@ public class Dashboard2 extends javax.swing.JFrame {
         content.revalidate();
         content.repaint();
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_tecnoMousePressed
+    }//GEN-LAST:event_btn_tecno1MousePressed
 
     private void btn_orderMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_orderMouseEntered
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_orderMouseEntered
 
     private void btn_orderMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_orderMouseExited
+             if(btn_tecno.getBackground().getRGB() != -15574355 ||btn_tecno1.getBackground().getRGB() != -15574355 ||btn_empress.getBackground().getRGB() != -15574355 || btn_princ.getBackground().getRGB() != -15574355 || btn_reguser.getBackground().getRGB() != -15574355)
+             resetColor(btn_order);
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_orderMouseExited
 
@@ -367,7 +375,7 @@ public class Dashboard2 extends javax.swing.JFrame {
         resetColor(btn_princ);
         resetColor(btn_empress);
         resetColor(btn_reguser);
-        resetColor(btn_tecno);
+        resetColor(btn_tecno1);
 
         Menu3B p1 = new Menu3B();
         p1.setSize(790, 570);
@@ -379,19 +387,23 @@ public class Dashboard2 extends javax.swing.JFrame {
         content.repaint();        // TODO add your handling code here:
     }//GEN-LAST:event_btn_orderMousePressed
 
-    private void btn_tecno1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tecno1MouseEntered
+    private void btn_tecnoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tecnoMouseEntered
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_tecno1MouseEntered
+    }//GEN-LAST:event_btn_tecnoMouseEntered
 
-    private void btn_tecno1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tecno1MouseExited
+    private void btn_tecnoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tecnoMouseExited
+             if(btn_tecno1.getBackground().getRGB() != -15574355 ||btn_order.getBackground().getRGB() != -15574355 ||btn_empress.getBackground().getRGB() != -15574355 || btn_princ.getBackground().getRGB() != -15574355 || btn_reguser.getBackground().getRGB() != -15574355)
+             resetColor(btn_tecno);
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_tecno1MouseExited
+    }//GEN-LAST:event_btn_tecnoMouseExited
 
-    private void btn_tecno1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tecno1MousePressed
+    private void btn_tecnoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tecnoMousePressed
         setColor(btn_tecno);
         resetColor(btn_princ);
         resetColor(btn_empress);
         resetColor(btn_reguser);
+        resetColor(btn_tecno1);
+        resetColor(btn_order);
         
         Menu2B p1 = new Menu2B();
         p1.setSize(790, 570);
@@ -403,7 +415,7 @@ public class Dashboard2 extends javax.swing.JFrame {
         content.repaint();
 
         // TODO add your handling code here:
-    }//GEN-LAST:event_btn_tecno1MousePressed
+    }//GEN-LAST:event_btn_tecnoMousePressed
 
         void setColor(JPanel panel){
         panel.setBackground(new Color(180,80,100));

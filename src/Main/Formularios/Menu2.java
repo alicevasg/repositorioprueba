@@ -13,7 +13,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.table.DefaultTableModel;
 import java.awt.BorderLayout;
-import static Main.Formularios.Dashboard2.content;
+import static Main.Formularios.Dashboard.content;
 import java.sql.PreparedStatement;
 /**
  *

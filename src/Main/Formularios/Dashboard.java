@@ -197,7 +197,7 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Main/Icon/folder/Icons/comprobacion-de-lista.png"))); // NOI18N
         jLabel4.setText("EMPLEADOS");
-        btn_tecno1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, 100, -1));
+        btn_tecno1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, 140, -1));
 
         Menu.add(btn_tecno1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 450, 230, 70));
 

@@ -235,7 +235,7 @@ public class Menu2B extends javax.swing.JPanel {
         String valor = tbl_buscar.getValueAt(fila, 0).toString();
         
         try {
-            PreparedStatement elimina = conn.prepareStatement("DELETE FROM tecnico WHERE ID2='"+valor+"'");
+            PreparedStatement elimina = conn.prepareStatement("DELETE FROM revisiones WHERE id2='"+valor+"'");
             elimina.executeUpdate();
             mostrartablas();
         } catch (Exception e) {

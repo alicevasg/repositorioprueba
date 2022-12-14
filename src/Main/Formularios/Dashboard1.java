@@ -280,7 +280,7 @@ public class Dashboard1 extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_empressMouseEntered
 
     private void btn_empressMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_empressMouseExited
-            if(btn_princ.getBackground().getRGB() != -15574355 || btn_reguser.getBackground().getRGB() != -15574355 || btn_tecno.getBackground().getRGB() != -15574355)
+            if(btn_order.getBackground().getRGB() != -15574355 ||btn_tecno1.getBackground().getRGB() != -15574355 ||btn_princ.getBackground().getRGB() != -15574355 || btn_reguser.getBackground().getRGB() != -15574355 || btn_tecno.getBackground().getRGB() != -15574355)
             resetColor(btn_empress);
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_empressMouseExited
@@ -290,6 +290,8 @@ public class Dashboard1 extends javax.swing.JFrame {
         resetColor(btn_princ);
         resetColor(btn_reguser);
         resetColor(btn_tecno);
+        resetColor(btn_tecno1);
+        resetColor(btn_order);
 
         Menu1A p1 = new Menu1A();
         p1.setSize(790, 570);
@@ -331,16 +333,19 @@ public class Dashboard1 extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_tecnoMouseExited
 
     private void btn_tecnoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tecnoMouseEntered
-            if(btn_tecno.getBackground().getRGB() == -15574355)
-            setColor(btn_tecno);
+             if(btn_tecno1.getBackground().getRGB() != -15574355 ||btn_tecno.getBackground().getRGB() != -15574355 ||btn_empress.getBackground().getRGB() != -15574355 || btn_princ.getBackground().getRGB() != -15574355 || btn_reguser.getBackground().getRGB() != -15574355)
+             resetColor(btn_order);
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_tecnoMouseEntered
 
     private void btn_tecnoMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_tecnoMousePressed
-        setColor(btn_tecno);
+        setColor(btn_order);
         resetColor(btn_princ);
         resetColor(btn_empress);
         resetColor(btn_reguser);
+        resetColor(btn_tecno);
+        resetColor(btn_tecno1);
+
         
         Menu4A p1 = new Menu4A();
         p1.setSize(790, 570);
@@ -358,6 +363,8 @@ public class Dashboard1 extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_orderMouseEntered
 
     private void btn_orderMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_orderMouseExited
+             if(btn_tecno1.getBackground().getRGB() != -15574355 ||btn_tecno.getBackground().getRGB() != -15574355 ||btn_empress.getBackground().getRGB() != -15574355 || btn_princ.getBackground().getRGB() != -15574355 || btn_reguser.getBackground().getRGB() != -15574355)
+             resetColor(btn_order);
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_orderMouseExited
 
